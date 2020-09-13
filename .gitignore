@@ -1,8 +1,6 @@
 # NetBeans
 
-nbproject/
-*.xml
-*.mf
+nbproject/private
 
 # Compiled class file
 *.class

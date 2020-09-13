@@ -1,12 +1,10 @@
 
-package PVendedor;
+package vendedor;
 
 import java.util.*;
 import java.io.*;
 
-/*
- * @author Gokoshi Jr PROGRAMACION 3   
- */
+//  PARCIAL 1 
 
 public class Vendedor {
     
@@ -14,7 +12,7 @@ public class Vendedor {
     public static void leoArchivo(String nombres[], int ventas[][]) throws IOException {
         
         int registros = 0;
-        Scanner leer = new Scanner(new File("src/PVendedor/Ventas.txt"));
+        Scanner leer = new Scanner(new File("src/vendedor/Ventas.txt"));
         
         while(leer.hasNextLine()) {
             while(leer.hasNext()) {
@@ -51,14 +49,14 @@ public class Vendedor {
         
         System.out.printf("\t%50s\n\n","Lista de Vendedores con sus ventas");
         System.out.printf("%-10s %7s %8s %10s %9s %8s %10s %12s\n",
-                          "Nombre","Enero","Feb","Marzo","Abril","Mayo","Junio","Promedio");
+                          "Nombre", "Enero", "Feb", "Marzo", "Abril", "Mayo"," Junio", "Promedio");
         
         for(int i=0; i<5; i++) {
-            System.out.printf("%-8s",nombres[i]);
+            System.out.printf("%-8s", nombres[i]);
             for(int j=0; j<6; j++) {
                 System.out.printf("%10s", ventas[i][j]);
             }
-            System.out.printf("\t %8.2f\n",promedio[i]);
+            System.out.printf("\t %8.2f\n", promedio[i]);
         }
         
         System.out.printf("\nTotal mes:");

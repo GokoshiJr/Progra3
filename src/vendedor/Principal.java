@@ -1,15 +1,14 @@
 
-package PVendedor;
+package vendedor;
 
 import java.io.IOException;
-/*
- * @author Gokoshi Jr PROGRAMACION 3  
- */
+
+//  PARCIAL 1  
+ 
 public class Principal {
     
     public static void main(String[] args) throws IOException {
-        // TODO code application logic here
-        
+                
         String nombre[]   = new String[5];
         int ventas[][]    = new int[5][6];
         int total[]       = new int[6];
